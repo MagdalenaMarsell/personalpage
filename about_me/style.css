@@ -1,0 +1,131 @@
+body {
+    background: rgb(114, 87, 82);
+    background: linear-gradient(
+      90deg,
+      rgba(114, 87, 82, 1) 0%,
+      rgba(139, 124, 101, 1) 100%
+    );
+  }
+  
+  .gora {
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+  }
+  
+  .shape-container {
+    display: flex;
+    flex-direction: row;
+    align-items: baseline;
+    gap: 0 1rem;
+  }
+  
+  .shape-color {
+    background-color: #e4dcd1;
+    transition: all 0.2s ease-in;
+  }
+  
+  .img-logo {
+    height: auto;
+    width: 400px;
+    -webkit-user-drag: none;
+  }
+  
+  .shape-color:hover {
+    background-color: #162521;
+    scale: 1.1;
+  }
+  
+  .top {
+    height: 45px;
+    width: 90px;
+    border-top-left-radius: 90px;
+    border-top-right-radius: 90px;
+  }
+  
+  .right {
+    height: 90px;
+    width: 45px;
+    border-bottom-right-radius: 90px;
+    border-top-right-radius: 90px;
+  }
+  
+  .bottom {
+    height: 45px;
+    width: 90px;
+    border-bottom-left-radius: 90px;
+    border-bottom-right-radius: 90px;
+  }
+  
+  .left {
+    height: 90px;
+    width: 45px;
+    border-bottom-left-radius: 90px;
+    border-top-left-radius: 90px;
+  }
+  
+  .rotate {
+    animation: 1s linear infinite rotate;
+    position: relative;
+    top: -45px;
+    transform-origin: 50% 100%;
+  }
+  
+  @keyframes rotate {
+    from {
+      transform: rotate(0deg);
+    }
+    to {
+      transform: rotate(360deg);
+    }
+  }
+  
+  h1 {
+    font-family: 'Dancing Script', cursive;
+    font-weight: 900;
+    font-size: 70px;
+    text-align: center;
+    padding-top: 80px;
+    color: #e4dcd1;
+  }
+  
+  .intro {
+    animation-name: floating;
+    animation-duration: 3s;
+    animation-iteration-count: infinite;
+    animation-timing-function: ease-in-out;
+    margin-left: 30px;
+    margin-top: 5px;
+  }
+  
+  @keyframes floating {
+    0% {
+      transform: translate(0, 0px);
+    }
+    50% {
+      transform: translate(0, 15px);
+    }
+    100% {
+      transform: translate(0, -0px);
+    }
+  }
+  
+  h2 {
+    font-family: "Coming Soon", cursive;
+    text-align: center;
+    color: #e4dcd1;
+  }
+  
+  footer {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    height: 50px;
+    margin: 0;
+  }
+  
+  .footer-style{
+    font-family: "Coming Soon", cursive;
+    text-align: center;
+    color: #e4dcd1;
+  }
